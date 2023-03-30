@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <main class="w-screen h-screen bg-neighbourhood bg-center bg-no-repepat bg-cover bg-fixed xl:bg-neighbourhoodXL">
+    <px-header />
+    <px-cards />
+    <px-diamond-card />
+  </main>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import PxCards from "@/components/PxCards";
+import PxDiamondCard from "@/components/PxDiamondCard";
+import PxHeader from "@/components/PxHeader";
+
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    PxHeader,
+    PxCards,
+    PxDiamondCard
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
