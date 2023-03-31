@@ -11,6 +11,7 @@ module.exports = {
     colors: {
       // Color palette
       'black': '#000000',
+      'secondary-black': '#171720',
       'white': '#FFFFFF',
       'purple': '#9F00A4',
       'yellow': '#FFBB00',
@@ -18,7 +19,9 @@ module.exports = {
       'light-blue': '#28F6E8',
       'green': '#00940A',
       'dark-green': '#003706',
-
+      'skin': '#FF9F6D',
+      'brown': '#5E2000',
+      'nada': 'transparent',
     },
     fontSize:{
       'xs': '1.2rem',
@@ -73,7 +76,7 @@ module.exports = {
       },
       textUnderlineOffset: {
         10: '10px',
-      }
+      },
     },
   },
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],

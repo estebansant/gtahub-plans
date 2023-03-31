@@ -1,20 +1,30 @@
 <template>
-    <section class="flex justify-center items-center">
-        <div v-for="card in cardsArray" :key="card.title">
+    <section class="w-screen h-auto flex justify-center items-center">
+        <div 
+            class="md:w-[175px] md:h-auto bg-secondary-black rounded-lg"
+            v-for="card in cardsArray"
+            :key="card.title"
+        >
             <picture>
                 <source media="(min-width: 2559px)" :srcset="card.image2xl" />
                 <img :src=" card.image" />
             </picture>
-            <span>
-                <h2>{{ card.title }}</h2>
+            <span class="w-full h-[60px] ">
+                <h2 :class="{'bg-gradient-to-t from-brown to-skin inline-block text-nada bg-clip-text' : (card.title==='BRONZE'),
+                'text-[35px]' : (card.title==='SILVER'), 
+                'text-[40px]' : (card.title==='GOLDEN')}
+                ">
+                {{ card.title }}
+            </h2>
             </span>
             <h4>BENEFICIOS</h4>
 
-            <ul v-for="(benefit, i) in card.benefits" :key="i">
-                <li>
-                    <font-awesome-icon :icon="benefit.icon" style="color: #ffffff"/>
-                    <p>{{ benefit.number }}</p>
-                    <p>{{ benefit.text }}</p>
+            <ul v-for="(benefit, i) in card.benefits" :key="i"
+            >
+                <li class="w-full h-auto flex justify-start items-center mb-4">
+                    <font-awesome-icon :icon="benefit.icon" style="color: #ffffff" class="md:w-[8px] md:h-auto lg:w-[12.5px] lg:h-[20px] mr-[6.71px]"/>
+                    <p class="mr-[8px] text-white font-Roboto font-black md:text-xs lg:text-l">{{ benefit.number }}</p>
+                    <p class="text-white font-Roboto font-normal md:text-xs lg:text-l">{{ benefit.text }}</p>
                 </li>
             </ul>
 
@@ -57,6 +67,23 @@ export default {
 
   components:{
     PxDiamondCard
+  },
+  methods:{
+    titleColor(){
+        let title = this.cardsArray.title;
+        if(title == 'BRONZE'){
+            let className = "text-[50px]";
+            return className;
+        }else if (title == 'SILVER'){
+            let className = ""
+            return className;
+        } else if (title == 'GOLDEN'){
+            let className = ""
+            return className;
+        } else{
+            return null
+        }
+    }
   },
 
   data(){
