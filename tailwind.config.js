@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,vue}"],
   theme: {
@@ -6,35 +7,41 @@ module.exports = {
       md: '768px',
       lg: '1280px',
       xl: '2560px',
-      'special': { 'raw': '(min-height: 600px) and (max-width:1024px) and (max-height:601px)'},
     },
     colors: {
       // Color palette
-      'black': '#252422',
-      'secondary-black': '#403d39',
-      'gray': '#ccc5b9',
-      'white': '#FAFAFA',
-      'secondary-white': '#f1faee',
-      'green': '#38b000',
+      'black': '#000000',
+      'white': '#FFFFFF',
+      'purple': '#9F00A4',
+      'yellow': '#FFBB00',
+      'blue': '#4791FF',
+      'light-blue': '#28F6E8',
+      'green': '#00940A',
+      'dark-green': '#003706',
+
     },
     fontSize:{
-      'xs': '12px',
-      'sm': '14px',
-      'base': '16px',
-      'l': '18px',
-      'xl': '20px',
-      '2xl': '24px',
-      '3xl': '32px',
-      '4xl': '38px',
-      '5xl': '46px',
+      'xs': '1.2rem',
+      'sm': '1.4rem',
+      'base': '1.6rem',
+      'l': '1.8rem',
+      'xl': '2.2rem',
+      '2xl': '2.4rem',
+      '3xl': '3.2rem',
+      '4xl': '3.8rem',
+      '5xl': '4.6rem',
+      '6xl': '5.7rem',
     },
     borderRadius: {
       'none': '0',
       'xs': '6px',
       'sm': '8px',
       'md': '12px',
-      'lg': '16px',
+      'lg': '20px',
       'full': '50%',
+    },
+    borderWidth: {
+      '1': '1px',
     },
     boxShadow:{
       'sm': '0 2px 4px 0 rgb(0 0 0 / 0.45)',
@@ -52,8 +59,23 @@ module.exports = {
       backgroundImage: {
         'neighbourhood': "url('/src/assets/images/Background.png')",
         'neighbourhoodXL': "url('/src/assets/images/Background@2x.png')"
+      },
+      width: {
+        '814': '814px',
+        '550': '750px',
+      },
+      height: {
+        '54': '54px',
+        '68': '68px',
+      },
+      lineHeight:{
+        '27': '27px',
+      },
+      textUnderlineOffset: {
+        10: '10px',
       }
     },
   },
-  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
-};
+  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+}
+
