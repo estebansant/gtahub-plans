@@ -25,7 +25,7 @@
         </ul>
 
         
-        <div class="h-[41px] mt-[22px] lg:mt-[-23px] relative bg-gradient-to-t from-dark-purple to-purple text-center flex justify-center items-center"> 
+        <div class="h-[41px] mt-[22px] lg:mt-[-23px] xl:mt-[27.5px] relative bg-gradient-to-t from-bluewish to-light-blue text-center flex justify-center items-center"> 
             <div class="w-full h-[50px] absolute top-[-50px] bg-gradient-to-b from-white/0 via-darkest-blue/60 to-darker-black/60 flex justify-center items-center">
                 <font-awesome-icon icon="fa-solid fa-chevron-down" style="color: #ffffff" class="w-[23.62px] h-[13.5px] mt-8" />
             </div>
@@ -43,7 +43,7 @@
             <p class="text-yellow font-Monument font-black md:text-xl text-center md:mt-[-6px] lg:text-[4.8rem] lg:mt-[-10px]">{{ card.hubs }}</p>
             <p class="text-white font-light font-Monument md:text-sm text-center mt-[-6px] lg:text-[2.3rem] lg:mt-[-18px]">HUBS/mes</p>
 
-            <button class="mt-[17px] w-[85%] md:h-[41px] bg-gradient-to-t from-dark-blue to-blue rounded-lg mb-8 lg:h-[54px] xl:w-[360px] xl:h-[59px] lg:rounded-[44px]">
+            <button class="mt-[17px] w-[85%] md:h-[41px] bg-gradient-to-t from-dark-blue to-blue rounded-lg mb-8 lg:h-[54px] xl:w-[360px] xl:h-[59px] lg:rounded-[44px] transition transition-all hover:scale-105 duration-300 ease-in-out">
                 <p class="text-white font-Roboto font-normal md:text-base lg:text-[2.9rem]">Comprar</p>
             </button>
         </div>
@@ -70,43 +70,36 @@ export default {
             benefits: [
                 {
                     icon: 'fa-solid fa-person-walking',
-                    color: '#ffffff',
                     number: '+2',
                     text: 'estilos de caminar',
                 },
                 {
                     icon: 'fa-solid fa-person-walking',
-                    color: '#ffffff',
                     number: '+4',
                     text: 'ranuras extras de tatuajes',
                 },
                 {
                     icon: 'fa-solid fa-person-walking',
-                    color: '#ffffff',
                     number: '+1',
                     text: 'llave para compartir de propiedades',
                 },
                 {
                     icon: 'fa-solid fa-person-walking',
-                    color: '#ffffff',
                     number: '',
                     text: 'Acceso directo en horas pico',
                 },
                 {
                     icon: 'fa-solid fa-person-walking',
-                    color: '#ffffff',
                     number: '+2',
                     text: 'estilos de caminar',
                 },
                 {
                     icon: 'fa-solid fa-person-walking',
-                    color: '#ffffff',
                     number: '+4',
                     text: 'ranuras extras de tatuajes',
                 },
                 {
                     icon: 'fa-solid fa-person-walking',
-                    color: '#ffffff',
                     number: '+1',
                     text: 'llave para compartir de propiedades',
                 },
