@@ -1,5 +1,5 @@
 <template>
-  <main class="w-screen h-screen bg-neighbourhood bg-center bg-no-repepat bg-cover bg-fixed flex flex-col items-center xl:bg-neighbourhoodXL">
+  <main class="w-screen h-screen bg-neighbourhood bg-center bg-no-repepat bg-cover bg-fixed flex flex-col items-center xl:bg-neighbourhoodXL overflow-y-scroll">
     <px-header />
     <px-cards />
   </main>
