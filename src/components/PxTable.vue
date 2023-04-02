@@ -6,11 +6,11 @@
                 </picture>
         <table class="w-auto h-fit border-collapse">
             <colgroup>
-                <col class="w-[350px] lg:w-[700px] xl:w-[796px] border-2 border-solid border-white border-l-0 border-t-0"/>
-                <col class="md:w-[110px] lg:w-[170px] xl:w-[220px] border-solid border-white border-2"/>
-                <col class="md:w-[110px] lg:w-[170px] xl:w-[220px] border-solid border-white border-2"/>
-                <col class="md:w-[110px] lg:w-[170px] xl:w-[220px] border-solid border-more-purple border-2"/>
-                <col class="md:w-[110px] lg:w-[170px] xl:w-[220px] border-solid border-2 border-white border-r-0 border-b-0"/>
+                <col class="w-[350px] lg:w-[700px] xxl:min-w-[796px] xl:w-[65%] border-2 border-solid border-white border-l-0 border-t-0"/>
+                <col class="md:w-[110px] lg:w-[170px] xl:min-w-[220px] xl:w-[8.75%] border-solid border-white border-2"/>
+                <col class="md:w-[110px] lg:w-[170px] xl:min-w-[220px] xl:w-[8.75%] border-solid border-white border-2"/>
+                <col class="md:w-[110px] lg:w-[170px] xl:min-w-[220px] xl:w-[8.75%] border-solid border-more-purple border-2"/>
+                <col class="md:w-[110px] lg:w-[170px] xl:min-w-[220px] xl:w-[8.75%] border-solid border-2 border-white border-r-0 border-b-0"/>
             </colgroup>
             <thead>
                 <tr>
@@ -24,14 +24,14 @@
                         <img class="w-[100px] md:h-[17px] mx-auto  lg:w-[140px] lg:h-[18px] xl:w-[172.49px] xl:h-[24.73px]" src="../assets/images/titles/silver.png" alt="silver"/>
                     </th>
                     <th class="relative">
-                        <div class="md:w-[65%] h-[15px] lg:w-[100px] xl:w-[126px] bg-gradient-to-t from-dark-purple to-purple shadow-[0px_0px_10px_#FF00EE57;] rounded-[9px] absolute top-[-12.5px] mx-auto right-0 left-0 flex justify-center items-center">
-                            <p class="font-Roboto font-bold md:text-[0.7rem] lg:text-[1rem] text-center text-white">MÁS POPULAR</p>
+                        <div class="md:w-[70%] h-[24px] lg:w-[75%] bg-gradient-to-t from-dark-purple to-purple shadow-[0px_0px_10px_#FF00EE57;] rounded-[9px] absolute top-[-18px] mx-auto right-0 left-0 flex justify-center items-center">
+                            <p class="font-Roboto font-bold md:text-[1rem] lg:text-[1.4rem] xl:text-base text-center text-white">MÁS POPULAR</p>
                         </div>
                         <img class="w-[100px] md:h-[17px] mx-auto lg:w-[140px] lg:h-[18px] xl:w-[172.49px] xl:h-[24.73px]" src="../assets/images/titles/golden.png" alt="golden"/>
                     </th>
                     <th class="relative">
-                        <div class="md:w-[65%] h-[15px] lg:w-[100px] xl:w-[126px] bg-gradient-to-t from-more-blue to-light-blue shadow-[0px_0px_10px_#00EDFF57;] rounded-[9px] absolute top-[-12.5px] mx-auto right-0 left-0 flex justify-center items-center">
-                            <p class="font-Roboto font-bold md:text-[0.7rem] lg:text-[1rem] text-center text-black">MÁS BENEFICIOS</p>
+                        <div class="md:w-[70%] h-[24px] lg:w-[75%] bg-gradient-to-t from-more-blue to-light-blue shadow-[0px_0px_10px_#00EDFF57;] rounded-[9px] absolute top-[-18px] mx-auto right-0 left-0 flex justify-center items-center">
+                            <p class="font-Roboto font-bold md:text-[1rem] lg:text-[1.4rem] xl:text-base text-center text-black">MÁS BENEFICIOS</p>
                         </div>
                         <img class="w-[100px] md:h-[19px] mx-auto lg:w-[140px] lg:h-[18px] xl:w-[172.49px] xl:h-[24.73px]" src="../assets/images/titles/diamondTitle.png" alt="diamond"/>
                     </th>

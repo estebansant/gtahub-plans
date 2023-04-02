@@ -1,8 +1,7 @@
 <template>
     <div 
-        class="md:w-[185px] lg:w-[325px] xl:w-[416px] lg:h-[696px] xl:h-[696px] bg-secondary-black rounded-lg relative"
-        :class="{'bg-gradient-to-t from-secondary-black via-dark-yellow to-secondary-black' : (card.banner === 'MÁS POPULAR')}"
         v-for="card in cardsArray"
+        class="md:w-[185px] lg:w-[325px] xl:w-[416px] lg:h-[696px] xl:h-[696px] bg-secondary-black rounded-lg relative bg-gradient-to-t from-secondary-black via-darkest-of-blues to-secondary-black"
         :key="card.title"
     >
         

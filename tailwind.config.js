@@ -24,6 +24,7 @@ module.exports = {
       'more-blue': '#033EE2',
       'light-blue': '#28F6E8',
       'dark-blue': '#000E48',
+      'darkest-of-blues': '#002939',
       'darkest-blue': '#030608FC',
       'darker-black': '#04090D',
       'dark-purple': '#57009A',
