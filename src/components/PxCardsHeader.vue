@@ -8,7 +8,7 @@
     </button>
     <span class="flex gap-4">
         <p class="text-Roboto font-bold text-white text-center text-xl leading-27">Balance:</p>
-        <p class="text-Monument font-black text-yellow text-center text-[2.8rem] leading-[25px]">7890</p>
+        <p class="text-Monument font-black text-yellow text-center text-[2.8rem] leading-[25px]">{{balance}}</p>
         <p class="text-Roboto font-bold text-white text-center text-xl leading-27">Hubs</p>
     </span>
 </template>
@@ -16,6 +16,10 @@
 <script>
     export default {
         name: 'PxCardsHeader',
-        
+        data(){
+            return{
+                balance: 7890,
+            }
+        }
     }
 </script>

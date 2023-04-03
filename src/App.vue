@@ -40,5 +40,11 @@ export default {
     PxTableHeader,
     PxTable,
   },
+
+  methods: {
+    packageDetails(data) {
+      this.data = data;
+    }
+  }
 };
 </script>

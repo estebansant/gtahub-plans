@@ -41,8 +41,8 @@
                 <tr v-for="(row, i) in tableArray" :key="i">
                     <td>
                         <div class="w-full md:h-[30px] pl-4 lg:h-[39px] xl:h-[48px] flex items-center gap-4">
-                            <font-awesome-icon :icon="row.icon" style="color: #ffffff" class="md:w-[8px] md:h-auto lg:w-[12.5px] xl:w-[12.5px] xl:h-[20px]"/>
-                            <p class="text-white font-Roboto text-normal md:text-xs lg:text-l xl:text-xl">{{ row.title }}</p>
+                            <!-- <font-awesome-icon v-html="$colorize(string)" class="md:w-[8px] md:h-auto xl:w-[12.5px] xl:h-[20px]"/> -->
+                            <p class="text-white font-Roboto text-normal md:text-xs lg:text-l xl:text-xl">{{ row.text }}</p>
                         </div>
                     </td>
                     <td>
@@ -95,8 +95,8 @@
                                 <p class="text-white font-Roboto font-normal md:text-[.8rem] lg:text-xs">beneficios por</p>
                             </span>
 
-                            <p class="text-yellow font-Monument font-black md:text-xl lg:text-2xl text-center md:mt-[-6px] xl:text-[3.5rem] lg:mt-[-2px]">{{ pack.hubs }}</p>
-                            <p class="text-white font-light font-Monument md:text-[1rem] lg:text-[1.4rem] text-center mt-[-6px] xl:-[1.6rem] lg:mt-[-6px]">HUBS/mes</p>
+                            <p class="text-yellow font-Monument font-black md:text-xl lg:text-2xl text-center md:mt-[-6px] xl:text-[3.5rem] lg:mt-[-2px]">{{ pack.price }}</p>
+                            <p class="text-white font-light font-Monument md:text-[1rem] lg:text-[1.4rem] text-center mt-[-6px] xl:-[1.6rem] lg:mt-[-6px]">price/mes</p>
 
                             <button class="mt-[8px] w-[85%] md:h-[20px] bg-gradient-to-t from-dark-blue to-blue rounded-lg lg:h-[27px] xl:w-[195px] xl:h-[33px] lg:rounded-[44px] transition transition-all hover:scale-105 duration-300 ease-in-out">
                                 <p class="text-white font-Roboto font-normal md:text-[0.9rem] lg:text-[1.2rem] xl:text-[1.5rem]">Comprar</p>
@@ -123,105 +123,94 @@ export default {
         packageArray: [
             {
                 expansions: '+6',
-                hubs: '700',
+                price: 700,
             },
             {
                 expansions: '+12',
-                hubs: '1820',
+                price: 1820,
             },
             {
                 expansions: '+25',
-                hubs: '3500',
+                price: 3500,
             },
             {
                 expansions: '+36',
-                hubs: '6000',
+                price: 6000,
             },
         ],
         tableArray: [
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Estilos de caminar',
+                text: '~icon_lock~ Estilos de caminar',
                 bronze: '+2',
                 silver: '+4',
                 golden: '+6',
                 diamond: '+6'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Ranuras extras de tatuajes',
+                text: '~icon_lock~ Ranuras extras de tatuajes',
                 bronze: '+4',
                 silver: '+4',
                 golden: '+8',
                 diamond: '+8'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Llaves para compartir de propiedades',
+                text: '~icon_lock~ Llaves para compartir de propiedades',
                 bronze: '+2',
                 silver: '+2',
                 golden: '+3',
                 diamond: '+4'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Ranuras de vehículos',
+                text: '~icon_lock~ Ranuras de vehículos',
                 bronze: 'fa-solid fa-x',
                 silver: '+1',
                 golden: '+2',
                 diamond: '+4'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Ranuras extras de casa personal',
+                text: '~icon_lock~ Ranuras extras de casa personal',
                 bronze: 'fa-solid fa-x',
                 silver: 'fa-solid fa-x',
                 golden: '+1',
                 diamond: '+2'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Ranuras extras de departamento personal',
+                text: '~icon_lock~ Ranuras extras de departamento personal',
                 bronze: 'fa-solid fa-x',
                 silver: 'fa-solid fa-x',
                 golden: '+1',
                 diamond: '+2'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Ranuras extras de almacén',
+                text: '~icon_lock~ Ranuras extras de almacén',
                 bronze: 'fa-solid fa-x',
                 silver: 'fa-solid fa-x',
                 golden: '+1',
                 diamond: '+2'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Acceso a la última colección de muebles exclusivos',
+                text: '~icon_lock~ Acceso a la última colección de muebles exclusivos',
                 bronze: 'fa-solid fa-x',
                 silver: 'fa-solid fa-x',
                 golden: 'fa-solid fa-check',
                 diamond: 'fa-solid fa-check'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Anuncios de teléfono "Golden"',
+                text: '~icon_lock~ Anuncios de teléfono "Golden"',
                 bronze: 'fa-solid fa-x',
                 silver: 'fa-solid fa-x',
                 golden: 'fa-solid fa-check',
                 diamond: 'fa-solid fa-check'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Acceso a todas las colecciones de muebles exclusivos',
+                text: '~icon_lock~ Acceso a todas las colecciones de muebles exclusivos',
                 bronze: 'fa-solid fa-x',
                 silver: 'fa-solid fa-x',
                 golden: 'fa-solid fa-x',
                 diamond: 'fa-solid fa-check'
             },
             {
-                icon: 'fa-solid fa-person-walking',
-                title: 'Anuncios de teléfono "Diamond"',
+                text: '~icon_lock~ Anuncios de teléfono "Diamond"',
                 bronze: 'fa-solid fa-x',
                 silver: 'fa-solid fa-x',
                 golden: 'fa-solid fa-x',
